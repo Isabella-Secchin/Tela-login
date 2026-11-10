@@ -1,0 +1,21 @@
+<div class="acesso-container">
+  <h1>Acesso</h1>
+
+  <label for="permissao">Usuário</label>
+  <input
+    #campoPermissao
+    id="permissao"
+    name="permissao"
+    type="text"
+    [(ngModel)]="permissao"
+    (input)="onLogando(campoPermissao.value)"
+    placeholder="Digite seu usuário"
+    autocomplete="username"
+  >
+
+  <button type="button" [disabled]="!podeEntrar" (click)="entrar()">
+    Entrar
+  </button>
+
+  <p aria-live="polite">{{ mensagem }}</p>
+</div>

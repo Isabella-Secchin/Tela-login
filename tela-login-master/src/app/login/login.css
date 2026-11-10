@@ -1,0 +1,61 @@
+.login-container {
+  width: 400px;
+  margin: 100px auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input {
+  height: 45px;
+  padding: 0 10px;
+  font-size: 16px;
+  border: 2px solid #e85c91;
+}
+
+.campo-email {
+  position: relative;
+}
+
+.campo-email input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.criar-conta {
+  position: absolute;
+  right: 0;
+  top: -25px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.esqueci {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.entrar {
+  height: 50px;
+  font-size: 20px;
+  border: 2px solid black;
+  background: white;
+  cursor: pointer;
+}
+
+.entrar:hover {
+  background: black;
+  color: white;
+}
